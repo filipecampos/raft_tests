@@ -114,7 +114,7 @@ public class SuperMonitor extends DefaultDevice implements ManagedDevice {
 	@Override
 	public void stopDevice() {
 		long start = System.currentTimeMillis();
-		logger.debug(getIdString() + " Stopping device...");
+		logger.debug("Stopping SuperMonitor...");
 		try {
 			// kill zookeeper server
 			Process p = Runtime.getRuntime().exec("kill -9 " + pid);
