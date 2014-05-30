@@ -1,0 +1,38 @@
+Get ws4d-java-se-full-dpws-with-security.jar from:
+
+ http://sourceforge.net/projects/ws4d-javame/files/ws4d-jmeds-v2/framework/v2.0.0-beta10/jars/general/
+
+and install it locally in Maven repository:
+
+ $ mvn install:install-file \
+	-Dfile=ws4d-java-se-full-dpws-with-security.jar \
+	-DgroupId=org.ws4d \
+	-DartifactId=ws4d-java-se-full-dpws-with-security \
+	-Dversion=2.0.0-beta10 \
+	-Dpackaging=jar
+	
+Get raft4ws from:
+
+https://github.com/filipecampos/raft4ws
+
+and build its binary distribution package with:
+
+ $ mvn package
+
+The distribution binary file is available as ./target/raft4ws-0.1-SNAPSHOT-bin.zip.
+Unzip the zip file and install the jar in the local Maven repository:
+ $ mvn install:install-file \
+	-Dfile=raft4ws-0.1-SNAPSHOT.jar \
+	-DgroupId=pt.uminho.di \
+	-DartifactId=raft4ws \
+	-Dversion=0.1-SNAPSHOT \
+	-Dpackaging=jar
+	
+# install sigar
+ mvn install:install-file -DgroupId=org.hyperic -DartifactId=sigar -Dversion=1.6.4 -Dpackaging=jar -Dfile=sigar.jar
+
+Build the binary distribution package with:
+
+ $ mvn package
+
+The distribution binary file is available as ./target/raft_tests-0.1-SNAPSHOT-bin.zip.
