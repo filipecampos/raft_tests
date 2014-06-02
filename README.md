@@ -2,9 +2,18 @@ Raft Tests
 ==========
 
 Testing code for raft4ws and comparison with ZooKeeper
-Depends on the raft4ws project (available at https://github.com/filipecampos/raft4ws).
+Depends on the [raft4ws](https://github.com/filipecampos/raft4ws "Raft4WS") project.
 
-Build files will be uploaded until 30th May 2014.
+## Release History
+
+* **0.1**: Initial release. (26 May, 2014)
+
+## Installing and using Raft Tests 
+
+Follow the instructions on the INSTALL file to build the binary distribution package.
+It will be located at ./target/raft_tests-0.1-SNAPSHOT-bin.zip.
+Extract the contents of the zip file and follow the following instructions to execute a Raft server or client.
+
 
 For Raft tests:
 - To run a Raft manager:
@@ -26,3 +35,9 @@ For Raft tests:
 
 - To run a monitored ZooKeeper client:
  $ ./bin/zoo_client <client_number> <connection_string> <iterations> <period>
+ 
+ 
+In order to gather metrics during the tests, you will need to download [Hyperic SIGAR 1.6.4]
+(http://sourceforge.net/projects/sigar/files/sigar/1.6/hyperic-sigar-1.6.4.zip/download "Hyperic SIGAR 1.6.4 Zip"), extract it, 
+and to copy the contents of sigar-bin/lib to the lib directory under 
+the directory resultant from unzipping raft_tests-0.1-SNAPSHOT-bin.zip.  
