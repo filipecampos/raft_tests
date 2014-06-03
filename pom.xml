@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>pt.uminho.di</groupId>
   <artifactId>raft_tests</artifactId>
-  <version>0.1-SNAPSHOT</version>
+  <version>0.1</version>
   <name>Raft Tests</name>
   <description>Tests for Raft4WS, which implementats the Raft consensus protocol on the WS4D DPWS stack.</description>
 
@@ -17,7 +17,7 @@
     <dependency>
 		<groupId>pt.uminho.di</groupId>
 		<artifactId>raft4ws</artifactId>
-		<version>0.1-SNAPSHOT</version>
+		<version>0.1</version>
 	</dependency>
 	<dependency>
 		<groupId>org.ws4d</groupId>

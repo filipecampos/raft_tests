@@ -11,7 +11,7 @@ Depends on the [raft4ws](https://github.com/filipecampos/raft4ws "Raft4WS") proj
 ## Installing and using Raft Tests 
 
 Follow the instructions on the INSTALL file to build the binary distribution package.
-It will be located at ./target/raft_tests-0.1-SNAPSHOT-bin.zip.
+It will be located at ./target/raft_tests-0.1-bin.zip.
 Extract the contents of the zip file and follow the following instructions to execute a Raft server or client.
 
 
@@ -40,4 +40,4 @@ For Raft tests:
 In order to gather metrics during the tests, you will need to download [Hyperic SIGAR 1.6.4]
 (http://sourceforge.net/projects/sigar/files/sigar/1.6/hyperic-sigar-1.6.4.zip/download "Hyperic SIGAR 1.6.4 Zip"), extract it, 
 and to copy the contents of sigar-bin/lib to the lib directory under 
-the directory resultant from unzipping raft_tests-0.1-SNAPSHOT-bin.zip.  
+the directory resultant from unzipping raft_tests-0.1-bin.zip.  

@@ -19,13 +19,13 @@ and build its binary distribution package with:
 
  $ mvn package
 
-The distribution binary file is available as ./target/raft4ws-0.1-SNAPSHOT-bin.zip.
+The distribution binary file is available as ./target/raft4ws-0.1-bin.zip.
 Unzip the zip file and install the jar in the local Maven repository:
  $ mvn install:install-file \
 	-Dfile=raft4ws-0.1-SNAPSHOT.jar \
 	-DgroupId=pt.uminho.di \
 	-DartifactId=raft4ws \
-	-Dversion=0.1-SNAPSHOT \
+	-Dversion=0.1 \
 	-Dpackaging=jar
 	
 # install sigar
@@ -35,4 +35,4 @@ Build the binary distribution package with:
 
  $ mvn package
 
-The distribution binary file is available as ./target/raft_tests-0.1-SNAPSHOT-bin.zip.
+The distribution binary file is available as ./target/raft_tests-0.1-bin.zip.
